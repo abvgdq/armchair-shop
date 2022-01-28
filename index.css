@@ -1,0 +1,161 @@
+.wrapper {
+   padding-left: 374px; 
+}
+
+.header {
+    width: 300px;
+}
+
+.header-up {
+    display: flex;
+}
+
+.title-img {
+    width: 25px;
+    height: 25px;
+    padding-right: 7px;
+}
+
+.header__title {
+    font-family: Inter;
+    font-size: 22px;
+    display: flex;
+}
+
+.title-office {
+    color: #43AB34;
+}
+
+.title-direct {
+    color: #005CA9;
+}
+
+.title-discription {
+    font-family: Inter;
+    font-size: 10px;
+    color: #B6B9C7;
+    padding-left: 34px;
+}
+
+.header__searching {
+    display: flex;
+    padding-left: 56px;
+    padding-right: 170px;
+}
+
+.search-img {
+    width: 18px;
+    height: 18px; 
+    padding-right: 9px;
+    padding-top: 6px;
+}
+
+.header__search {
+    border: 0;
+    width: 204px;
+}
+
+.header__number {
+    display: flex;
+    width: 300px;
+}
+
+.phone-img {
+    width: 20px;
+    height: 20px;
+    padding-top: 21px;
+    padding-right: 2px;
+}
+
+.number {
+    width: 297px;
+    padding-top: 20px;
+    color: #2B3350;
+    font-size: 19px;
+    padding-right: 13px;
+    font-family: Inter;
+}
+
+.header__call {
+    font-family: Inter;
+    color: #2B3350;
+    font-size: 16px;
+    list-style-type: none;
+    line-height: 140%;
+    display: flex;
+    padding-top: 18px
+}
+
+.header__calling {
+    font-family: Inter;
+    color: #2B3350;
+    font-size: 16px;
+    list-style-type: none;
+    padding-right: 34px;
+    line-height: 140%;
+    display: flex;
+}
+
+.header-down {
+    display: flex;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__btn {
+    background: #2B3350;
+    border-radius: 0px 12px 12px 12px;
+    color: #ffff;
+    width: 180px;
+    height: 47px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: Inter;
+    margin-right: 34px;
+    list-style-type: none;
+}
+
+.button-img {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.send-img {
+    width: 16px;
+    height: 16px;
+    padding-top: 3px;
+    padding-right: 9px;
+}
+
+.chevron-img {
+    width: 16px;
+    height: 16px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.cart-img {
+    width: 20px;
+    height: 20px;
+    padding-right: 9px;
+}
+
+.cart-add {
+    background: #0074D4;
+    width: 26px;
+    height: 19px;
+    border-radius: 27px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 6px;
+    margin-top: 2px;
+}
