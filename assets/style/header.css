@@ -12,6 +12,56 @@
     align-items: center;
 }
 
+.burger-menu {
+    display: none;
+    padding-right: 159px;
+    cursor: pointer;
+}
+
+.first__bar {
+    width: 22px;
+    height: 3px;
+    background-color: #2B3350;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.second__bar {
+    width: 26px;
+    height: 3px;
+    background-color: #2B3350;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.third__bar {
+    width: 18px;
+    height: 3px;
+    background-color: #2B3350;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .first__bar {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  .change .second__bar {
+    opacity: 0;
+  }
+  
+  
+  .change .third__bar {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+.menu__tel-img {
+    cursor: pointer;
+    margin-right: 149px;
+}
+
 .title-img {
     width: 184px;
     height: 30px;
@@ -37,6 +87,37 @@
     top: 71%;
     left: 20%;
     opacity: 0.6;
+}
+
+.tel__cart {
+    display: none;
+    position: relative;
+}
+
+.tel__cart-img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 154px;
+}
+
+.tel__cart-add {
+    background: #0074D4;
+    max-width: 100%;
+    height: 100%;
+    width: 13%;
+    height: 53%;
+    border-radius: 27px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    margin-left: 6px;
+    margin-top: 2px;
+    position: absolute;
+    bottom: 55%;
+    left: 88%;
 }
 
 .header__searching {
@@ -77,6 +158,9 @@
     width: 204px;
 }
 
+.header__num {
+    display: none;
+}
 
 .phone-img {
     width: 25px;
@@ -109,6 +193,9 @@
     color: #2B3350;
     padding-top: 18px;
     cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    outline: none;
 }
 
 .header__calling {
@@ -173,6 +260,14 @@
     cursor: pointer;
 }
 
+.header__calling-contact {
+    padding-right: 34%;
+}
+
+.header__location {
+    margin-top: 34px;
+    padding-left: 30px;
+}
 .cart-img {
     width: 30px;
     height: 20px;
@@ -194,3 +289,53 @@
     margin-top: 2px;
 }
 
+.header__cart {  
+    margin-top: 34px;
+}
+
+@media (max-width: 600px) {
+    .header-down {
+        background: #43AB34;
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    .header__list {
+        display: block;
+    }
+
+    .header__searching {
+        display: none;
+    }
+
+    .header__number {
+        display: none;
+    }
+
+    .header__num {
+        display: block;
+    }
+    .header__call {
+        display: none;
+    }
+
+    .burger-menu {
+        display: inline-block;
+    }
+    .header__wrapper {
+        padding-left: 17px;
+        padding-top: 20px;
+    }
+    .header__cart {
+        display: none;
+    } 
+
+    .tel__cart {
+        display: block;
+    }
+}

@@ -16,10 +16,19 @@
     <header class="header">
       <div class="header__wrapper wrapper">
         <div class="header-up">
+            <div class="burger-menu" onclick="myFunction(this)">
+                <div class="first__bar"></div>    
+                <div class="second__bar"></div>    
+                <div class="third__bar"></div>    
+            </div>
             <h2 class="header__title">
                 <img src="./assets/img/header/logo.svg" alt="logo.svg" class="title-img">
                 <span class="title-discription">КРЕСЛА SAMURAI</span>
-            </h2>  
+            </h2>
+            <div class="tel__cart">
+                <img src="./assets/img/header/shopping-cart.png" alt="shopping-cart.png" class="tel__cart-img">
+                <span class="tel__cart-add">+1</span>
+            </div>  
             <p class="header__searching">
                 <img src="./assets/img/header/loupe.png" alt="loupe.png" class="search-img">
                 <input type="search" name="q" placeholder="Название модели или артикул" class="header__searching-input"> 
@@ -50,21 +59,28 @@
                 <li class="header__calling">
                     Контакты
                 </li>
-                <li class="header__calling">
+              </ul>
+              <div class="burger-menu__num">
+                <div class="header__calling header__location">
                     <img src="./assets/img/header/send.png" alt="send.png" class="send-img">
                     Москва
                     <img src="./assets/img/header/chevron-down.png" alt="chevron-down.png" class="chevron-img">
-                </li>
-                <li class="header__calling">
-                    <img src="./assets/img/header/shopping-cart.png" alt="shopping-cart.png" class="cart-img">
-                    Корзина 
-                    <span class="cart-add">+1</span>
-                </li>
-              </ul>
+                </div>
+                <div class="header__num">
+                    <a href="tel:+7 495 221-06-75" class="header__phone">
+                        <img src="./assets/img/header/tel.png" alt="tel.png" class="phone-img">
+                        <div class="number">+7 495 221-06-75</div>
+                    </a>
+                </div>
+              </div>  
+              <div class="header__calling header__cart">
+                <img src="./assets/img/header/shopping-cart.png" alt="shopping-cart.png" class="cart-img">
+                <span class="card__none">Моя корзина</span> 
+                <span class="cart-add">+1</span>
+              </div>
           </div>
-      </div>  
-      
+      </div>   
     </header>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
