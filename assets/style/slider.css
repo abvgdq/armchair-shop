@@ -15,30 +15,16 @@
     padding: 0 374px;
     width: 100%;
     height: 100%;
+    flex: 1 0 100%;
+    transition: 0.7s;
 }
 
-.slider__item2 {
-    background: url(../img/slider/armchairs.svg) no-repeat;
-    padding: 0 374px;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.translate__item1 {
-    transform: translateX(2000px);
-}
-
-.translate__item2 {
-    transform: translateX(-2000px);
-}
-
-.block__items {
-    display: block;
+.translate__left {
+    transform: translateX(-1920px);
 }
 
 .slider__main {
-    width: 544px;
+    max-width: 544px;
     margin-top: 116px;
 }
 
@@ -104,3 +90,22 @@
     cursor: pointer;
 }
 
+.slider__dots {
+    display: flex;
+    position: absolute;
+    right: 48%;
+    width: 106px;
+}
+
+.slider__dot {
+    width: 6px;
+    height: 6px;
+    background: #CED2DA;
+    border-radius: 50%;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background: #2B3350;
+}

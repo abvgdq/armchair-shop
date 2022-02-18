@@ -300,6 +300,7 @@
         top: 0;
         left: -100%;
         transition: 0.5s;
+        z-index: 7;
     }
 
     .header__list {

@@ -9,15 +9,58 @@ burgerMenu.addEventListener('click', function(){
 
 const chevronLeft = document.querySelector('.slider__chevron-left')
 const chevronRight = document.querySelector('.slider__chevron-right')
-const sliderItem = document.querySelector('.slider__item1')
-const sliderItem1 = document.querySelector('.slider__item2')
+const sliderItem1 = document.querySelectorAll('.slider__item1')
+const dots = document.querySelectorAll('.slider__dot')
+const sliderDots = document.querySelector('.slider__dots')
+const dotActive = document.querySelector('.active-dot')
+
+
+let numSlider = sliderItem1.length;
+let count = 0
+
+let currentSlider = 1
 
 chevronRight.addEventListener('click', function(){
-    sliderItem.classList.toggle('translate__item1')
-    sliderItem1.classList.toggle('block__items')
+  if(currentSlider === numSlider) {
+    return;
+  }
+  count += 1920;
+  
+  currentSlider += 1;
+    sliderItem1.forEach(item => {
+      item.style.transform = `translateX(-${count}px)`;
+    })
 })
 
 chevronLeft.addEventListener('click', function(){
-    sliderItem.classList.toggle('translate__item2')
-    sliderItem1.classList.toggle('block__items')
+  if(currentSlider === 1) {
+    return;
+  }
+  count -= 1920;
+  
+  currentSlider -= 1;
+    sliderItem1.forEach(item => {
+      item.style.transform = `translateX(-${count}px)`;
+    })
 })
+
+sliderDots.addEventListener('click', function(it){
+  for(let i=0; i < sliderDots.children.length; i++){
+    sliderDots.children[i].classList.remove('active-dot');
+  }
+   it.target.classList.add('active-dot')
+})
+
+sliderDots.addEventListener('click', function(it){
+  for(let i=0; i < sliderDots.children.length; i++){
+    sliderDots.children[i].classList.remove('active-dot');
+  }
+   it.target.classList.add('active-dot')
+})
+
+
+ 
+  
+
+  
+ 
