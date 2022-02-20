@@ -1,66 +1,77 @@
-const burgerMenu = document.querySelector('.burger-menu')
-const headerDown = document.querySelector('.header-down')
-  
+const burgerMenu = document.querySelector(".burger-menu");
+const headerDown = document.querySelector(".header-down");
 
-burgerMenu.addEventListener('click', function(){
-  burgerMenu.classList.toggle('change');
-  headerDown.classList.toggle('active')
-})
+burgerMenu.addEventListener("click", function () {
+  burgerMenu.classList.toggle("change");
+  headerDown.classList.toggle("active");
+});
 
-const chevronLeft = document.querySelector('.slider__chevron-left')
-const chevronRight = document.querySelector('.slider__chevron-right')
-const sliderItem1 = document.querySelectorAll('.slider__item1')
-const dots = document.querySelectorAll('.slider__dot')
-const sliderDots = document.querySelector('.slider__dots')
-const dotActive = document.querySelector('.active-dot')
+const chevronLeft = document.querySelector(".slider__chevron-left");
+const chevronRight = document.querySelector(".slider__chevron-right");
+const sliderItem1 = document.querySelectorAll(".slider__item1");
+const dots = document.querySelectorAll(".slider__dot");
+const sliderDots = document.querySelector(".slider__dots");
+const dotActive = document.querySelector(".active-dot");
+let currentWidthSlider = document.querySelector(".slider__container").clientWidth;
+let numSlider = sliderItem1.length - 1;
+let count = 0;
+let currentSlider = 0;
 
-
-let numSlider = sliderItem1.length;
-let count = 0
-
-let currentSlider = 1
-
-chevronRight.addEventListener('click', function(){
-  if(currentSlider === numSlider) {
+chevronRight.addEventListener("click", function () {
+  if (currentSlider === numSlider) {
     return;
   }
-  count += 1920;
   
+  count += currentWidthSlider;
   currentSlider += 1;
-    sliderItem1.forEach(item => {
-      item.style.transform = `translateX(-${count}px)`;
-    })
-})
 
-chevronLeft.addEventListener('click', function(){
-  if(currentSlider === 1) {
+  dots.forEach((item) => {
+    item.classList.remove("active-dot");
+  });
+  document.querySelector(`[data-${currentSlider}]`).classList.add("active-dot");
+  sliderItem1.forEach((item) => {
+    item.style.transform = `translateX(-${count}px)`;
+  });
+});
+
+chevronLeft.addEventListener("click", function () {
+  if (currentSlider === 0) {
     return;
   }
-  count -= 1920;
-  
+  count -= currentWidthSlider;
   currentSlider -= 1;
-    sliderItem1.forEach(item => {
-      item.style.transform = `translateX(-${count}px)`;
-    })
-})
+  dots.forEach((item) => {
+    item.classList.remove("active-dot");
+  });
+  document.querySelector(`[data-${currentSlider}]`).classList.add("active-dot");
+  sliderItem1.forEach((item) => {
+    item.style.transform = `translateX(-${count}px)`;
+  });
+});
 
-sliderDots.addEventListener('click', function(it){
-  for(let i=0; i < sliderDots.children.length; i++){
-    sliderDots.children[i].classList.remove('active-dot');
+sliderDots.addEventListener("click", function (event) {
+  const isSliderDot = event.target.classList[0] === "slider__dot";
+  if (!isSliderDot) {
+    return;
   }
-   it.target.classList.add('active-dot')
-})
+  dots.forEach((item) => {
+    item.classList.remove("active-dot");
+  });
 
-sliderDots.addEventListener('click', function(it){
-  for(let i=0; i < sliderDots.children.length; i++){
-    sliderDots.children[i].classList.remove('active-dot');
+  if (isSliderDot) {
+    event.target.classList.add("active-dot");
   }
-   it.target.classList.add('active-dot')
+  
+  const currentDotSlider = event.target.dataset.item;
+  count = currentWidthSlider * Number(currentDotSlider);
+  currentSlider = Number(currentDotSlider);
+
+  sliderItem1.forEach((item) => {
+    item.style.transform = `translateX(-${count}px)`;
+  });
+});
+
+window.addEventListener('resize', function() {
+  currentWidthSlider = document.querySelector(".slider__container").clientWidth;
 })
-
-
- 
-  
-
-  
  
