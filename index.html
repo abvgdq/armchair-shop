@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/header.css">
     <link rel="stylesheet" href="./assets/style/slider.css">
+    <link rel="stylesheet" href="./assets/style/benefits.css">
+    <link rel="stylesheet" href="./assets/style/select.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
@@ -151,25 +153,62 @@
                 <div class="slider__dot" data-item = "4" data-3=""></div>
                 <div class="slider__dot" data-item = "5" data-4=""></div>
             </div>
-            <div class="slider__benefits">
-                <div class="slider__benefits-delivery">
-                    <img src="./assets/img/slider/delivery.png" alt="delivery.png" class="slider__benefits-img">
-                    <h3 class="benefits-title delivery-title"><span class="delivery-title_free">Бесплатная доставка<span> по Москве и Санкт-Петербургу — от 3 шт.</h3>
+        </div> 
+      </div>     
+    </section>
+    <section>
+        <div class="wrapper wrapper__benefits">
+            <div class="benefits">
+                <div class="benefits-delivery">
+                    <img src="./assets/img/benefits/delivery.png" alt="delivery.png" class="benefits-img">
+                    <h3 class="benefits-title delivery-title"><span class="delivery-title_free">Бесплатная доставка</span> <span class="delivery-title_free1">по Москве и Санкт-Петербургу — от 3 шт.</span></h3>
                     <p class="benefits-discription delivery-discription">Как получить?</p>
                 </div>
-                <div class="slider__benefits-discount">\
-                    <img src="./assets/img/slider/chess.png" alt="chess.png" class="slider__benefits-img">
-                    <h3 class="benefits-title">Индивидуальные скидки при заказе от 3 шт.</h3>
+                <div class="benefits-discount">
+                    <img src="./assets/img/benefits/chess.png" alt="chess.png" class="benefits-img1">   
+                    <h3 class="benefits-title"><span class="delivery-title_free">Индвиидуальные скидки</span> <span class="delivery-title_free1">при заказе от 3 шт.</span></h3>
                     <p class="benefits-discription delivery-discription">Смотреть условия</p>
                 </div>
-                <div class="slider__benefits-terms">
-                    <img src="./assets/img/slider/discount.png" alt="discount.png" class="slider__benefits-img">
-                    <h3 class="benefits-title">Для юридических лиц действуют особые условия</h3>
+                <div class="benefits-terms">
+                    <img src="./assets/img/benefits/discount.png" alt="discount.png" class="benefits-img2">
+                    <h3 class="benefits-title"> <span class="class="delivery-title_free1">Для юридических лиц действуют</span><span class="delivery-title_free">особые условия</span></h3>
                     <p class="benefits-discription">Узнать подробнее</p>
                 </div>
             </div>
-        </div> 
-      </div>     
+        </div>
+    </section>
+    <section class="select">
+        <div class="wrapper select__wrapper">
+            <h2 class="select__title">Каталог кресел</h2>
+            <div class="select__katalog">
+                <div class="katalog-back">
+                    <h3 class="katalog__title">Cпинка</h3>
+                    <select name="sel" id="" class="select__back">
+                        <option value="value1">Сетка</option>
+                        <option value="value2">Кожа</option>
+                        <option value="value3">Кожзам</option>
+                        <option value="value3">Ткань</option>
+                        <option value="value3">Тест</option>
+                        <option value="value3">Тест1</option>
+                    </select>
+                </div>
+                <div>
+                    <h3 class="katalog__title">Сиденье</h3>
+                    <div class="select__seat">
+                        <img src="./assets/img/select/seat.png" alt="seat.png" class="seat-img">
+                        <div class="select__seat-hidden">
+                            <div class="valueF">Кожзам</div>
+                            <div class="valueS">Секта</div>
+                            <div class="valueT">Кожа</div>
+                            <div class="valueFo">Ткань</div>
+                            <div class="valueFiv">Тест</div>
+                            <div class="valueSi">Тест1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
     </section>
     <script src="./index.js"></script>
 </body>

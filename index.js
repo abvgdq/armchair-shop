@@ -75,3 +75,6 @@ window.addEventListener('resize', function() {
   currentWidthSlider = document.querySelector(".slider__container").clientWidth;
 })
  
+
+const selectSeat = document.querySelectorAll('.select__seat-hidden')
+

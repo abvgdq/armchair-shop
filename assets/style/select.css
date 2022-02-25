@@ -1,0 +1,93 @@
+.select__wrapper {
+    padding:  0 374px;
+}
+
+.select__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 120%;
+    color: #2B3350;
+    text-align: center;
+    margin-top: 92px;
+    margin-bottom: 22px;
+}
+
+.select__katalog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.katalog__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #959AAE;
+}
+
+.select__back {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2B3350;
+    padding-right: 100px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url('../img/select/back.png') no-repeat;
+    background-position-y: 50%;
+    cursor: pointer;
+}
+
+.select__back:hover {
+    border: 2px solid #2F80ED;
+}
+
+.select__seat {
+    background: url('../img/select/chevron.png') no-repeat;
+    background-position-y: 50%;
+    background-position-x: 90%;
+    width: 281px;
+    height: 65px;
+    border: 1px solid #E7EAEF;
+    border-radius: 8px;
+    position: relative;
+}
+
+.seat-img {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.select__seat-hidden {
+    width: 390px;
+    height: 257px;
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #EDEDF2;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(157, 160, 166, 0.15);
+    border-radius: 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2B3350;
+}
+
+.select__seat:hover {
+    border: 2px solid #2F80ED;
+}
+
+.select__seat-hidden:hover {
+    border: 2px solid #2F80ED;
+}

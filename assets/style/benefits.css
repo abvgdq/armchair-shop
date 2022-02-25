@@ -1,0 +1,43 @@
+.benefits {
+    display: flex;
+    padding: 0 374px;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+
+.benefits-title {
+    font-family: Inter;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 150%;
+    width: 294px;
+    height: 60px;
+}
+
+.benefits-discription {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #959AAE;
+}
+
+.delivery-title_free {
+    color: #2B3350;
+}
+
+.delivery-title_free1 {
+    color: #464D66;
+}
+
+.benefits-img1 {
+    padding-bottom: 20px;
+}
+
+.benefits-img2 {
+    padding-bottom: 17px;
+}
+

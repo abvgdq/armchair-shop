@@ -127,49 +127,6 @@
     background: #2B3350;
 }
 
-.slider__benefits {
-    display: flex;
-    width: 1140px;
-    padding: 0 374px;
-    text-align: center;
-}
-
-.benefits-title {
-    font-family: Inter;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 150%;
-    color: #464D66;
-    width: 294px;
-    height: 60px;
-}
-
-.slider__benefits-img {
-}
-
-.benefits-discription {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 150%;
-    text-align: center;
-    color: #959AAE;
-}
-
-.slider__benefits-delivery {
-    margin-right: 68px;
-}
-
-.slider__benefits-discount {
-    margin-right: 68px;
-}
-
-.delivery-title_free {
-    color: #2B3350;
-}
-
-
 @media (max-width: 1600px){
     .slider__item1 {
         background-size: 100vw;
