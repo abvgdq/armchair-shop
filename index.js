@@ -76,5 +76,30 @@ window.addEventListener('resize', function() {
 })
  
 
-const selectSeat = document.querySelectorAll('.select__seat-hidden')
+  const selectHeader = document.querySelectorAll('.select__seat-active');
+  const selectItem = document.querySelectorAll('.select__seat-hidden');
+  const selectHidden = document.querySelector('.select__seat-hidden');
+  const select = document.querySelector('.select__seat')
+      selectHeader.addEventListener('click', function(){
+        selectHidden.classList.toggle('is-active');
+      })
+  
+
+  selectItem.forEach(item => {
+      item.addEventListener('click', function(){
+        let text = this.innerText,
+          select = this.closest('.select-seat'),
+          currentText = select.querySelector('.value-active');
+      currentText.innerText = text;
+      select.classList.remove('is-active');
+      })
+  });
+
+
+  
+   
+
+
+
+
 

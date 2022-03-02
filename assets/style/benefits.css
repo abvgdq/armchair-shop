@@ -29,8 +29,13 @@
     color: #2B3350;
 }
 
+.delivery-title_free2 {
+    color: #2B3350;
+    font-weight: normal;
+}
+
 .delivery-title_free1 {
-    color: #464D66;
+    font-weight: normal;
 }
 
 .benefits-img1 {
