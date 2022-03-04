@@ -75,31 +75,22 @@ window.addEventListener('resize', function() {
   currentWidthSlider = document.querySelector(".slider__container").clientWidth;
 })
  
+const selectChevron = document.querySelector('.select__chevron-img')
+const selectHeader = document.querySelector('.select__seat-active');
+const selectItems = document.querySelector('.select__seat-hidden');
+const selectText = document.querySelector('.value-active')
+const selectValue = document.querySelectorAll('.value') 
 
-  const selectHeader = document.querySelectorAll('.select__seat-active');
-  const selectItem = document.querySelectorAll('.select__seat-hidden');
-  const selectHidden = document.querySelector('.select__seat-hidden');
-  const select = document.querySelector('.select__seat')
-      selectHeader.addEventListener('click', function(){
-        selectHidden.classList.toggle('is-active');
-      })
-  
+ selectChevron.addEventListener("click", function(){
+  selectItems.classList.toggle('is-active')
+ })
 
-  selectItem.forEach(item => {
-      item.addEventListener('click', function(){
-        let text = this.innerText,
-          select = this.closest('.select-seat'),
-          currentText = select.querySelector('.value-active');
-      currentText.innerText = text;
-      select.classList.remove('is-active');
-      })
-  });
-
-
+ selectValue.forEach((item) => {
+  item.addEventListener("click",  function(event){
+    let text = this.textContent;
+    selectText.textContent = text;
+    selectItems.classList.remove('is-active');
+ })
+})
   
    
-
-
-
-
-
