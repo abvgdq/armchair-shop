@@ -80,17 +80,32 @@ const selectHeader = document.querySelector('.select__seat-active');
 const selectItems = document.querySelector('.select__seat-hidden');
 const selectText = document.querySelector('.value-active')
 const selectValue = document.querySelectorAll('.value') 
+const selectItemsAll = document.querySelectorAll('.select__seat-hidden');
+const selectChevronAll = document.querySelectorAll('.select__chevron-img')
 
- selectChevron.addEventListener("click", function(){
-  selectItems.classList.toggle('is-active')
- })
-
- selectValue.forEach((item) => {
-  item.addEventListener("click",  function(event){
-    let text = this.textContent;
-    selectText.textContent = text;
+  
+selectItemsAll.forEach(item => {
+  item.addEventListener("click", function(event){
+    if (event.target.classList[0] !== "value" || "") {
+      return
+    }
+    const currentItem = event.target.dataset.id
+    document.querySelector(`#${currentItem}`).textContent = event.target.textContent
     selectItems.classList.remove('is-active');
- })
+  })
+})
+
+selectChevronAll.forEach(item => {
+  item.addEventListener("click", function(event){
+    
+  })
 })
   
-   
+
+  
+
+
+
+
+
+  
