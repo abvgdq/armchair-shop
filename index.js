@@ -75,32 +75,23 @@ window.addEventListener('resize', function() {
   currentWidthSlider = document.querySelector(".slider__container").clientWidth;
 })
  
-const selectChevron = document.querySelector('.select__chevron-img')
-const selectHeader = document.querySelector('.select__seat-active');
-const selectItems = document.querySelector('.select__seat-hidden');
-const selectText = document.querySelector('.value-active')
-const selectValue = document.querySelectorAll('.value') 
-const selectItemsAll = document.querySelectorAll('.select__seat-hidden');
-const selectChevronAll = document.querySelectorAll('.select__chevron-img')
+const selectSeatAll = document.querySelectorAll('.select__seat');
 
-  
-selectItemsAll.forEach(item => {
+selectSeatAll.forEach(item => {
   item.addEventListener("click", function(event){
-    if (event.target.classList[0] !== "value" || "") {
-      return
+    const currentEl = event.target.classList[0];
+    if (currentEl === "select__chevron-img") {
+      item.querySelector('.select__seat-hidden').classList.toggle('is-active')
+      item.querySelector('.select__chevron-img').classList.toggle('is-active__rotate')
     }
-    const currentItem = event.target.dataset.id
-    document.querySelector(`#${currentItem}`).textContent = event.target.textContent
-    selectItems.classList.remove('is-active');
+    if (currentEl === "value") {
+      item.querySelector('.value-active').textContent = event.target.textContent;
+      item.querySelector('.select__seat-hidden').classList.remove('is-active')
+    }
   })
 })
 
-selectChevronAll.forEach(item => {
-  item.addEventListener("click", function(event){
-    
-  })
-})
-  
+
 
   
 

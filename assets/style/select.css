@@ -76,8 +76,7 @@
     margin-right: 20px;
 }
 
-.select__seat-active::before {
-    content: 'Сиденье';
+.select__seat-back {
     position: absolute;
     font-family: Inter;
     font-style: normal;
@@ -91,6 +90,52 @@
     left: 40px;
     background: #FFFFFF;
 }
+
+.select_seat-seat {
+    position: absolute;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #959AAE;
+    padding-left: 8px;
+    padding-right: 8px;
+    top: -11px;
+    left: 40px;
+    background: #FFFFFF;
+}
+
+.select_seat-headrest {
+    position: absolute;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #959AAE;
+    padding-left: 8px;
+    padding-right: 8px;
+    top: -11px;
+    left: 40px;
+    background: #FFFFFF;
+}
+
+.select__seat-armrest {
+    position: absolute;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #959AAE;
+    padding-left: 8px;
+    padding-right: 8px;
+    top: -11px;
+    left: 40px;
+    background: #FFFFFF;
+}
+
 
 .select__seat-hidden {
     width: 100%;
