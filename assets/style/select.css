@@ -44,7 +44,7 @@
 
 .select__seat {
     position: relative;
-    width: 390px;
+    width: 281px;
     height: 65px;
 }
 
@@ -155,6 +155,8 @@
     border-top-right-radius: 0;
     display: none;
     border-top: none;
+    z-index: 9999;
+    background: #FFFFFF;
 }
 
 .value {
